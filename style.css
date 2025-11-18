@@ -1,0 +1,386 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #111;
+  color: #ccc;
+  font-family: sans-serif;
+}
+
+/* ===== Navbar ===== */
+.navbar {
+  width: 100%;
+  background: #1d1d1d;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  flex-wrap: wrap;
+}
+
+.navbar .logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.navbar .logo img {
+  width: 90px;
+}
+.navbar .logo h1 {
+  font-size: 14px;
+  color: rgb(180, 180, 180);
+}
+
+.navbar input {
+  background: black;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 8px;
+}
+.navbar input:focus {
+  outline: none;
+  border: 2px solid lime;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+.navbar a {
+  text-decoration: none;
+  color: #ccc;
+  font-weight: bold;
+  transition: 0.3s;
+ 
+}
+.navbar a:hover {
+  color: limegreen;
+}
+.menu-icon {
+  display: none;
+  font-size: 22px;
+  color: white;
+  cursor: pointer;
+}
+
+/* Responsive Navbar */
+
+/* ===== Sections ===== */
+.section3 {
+  width: 100%;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+
+.section3 h2 {
+  color: #fff;
+  font-size: 25px;
+}
+
+.section3_Mneow,
+.section2_Mneow ,
+.sbacheal_Mneow,
+.sbachea2_Mneow{
+  padding: 10px;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  gap: 20px;
+  scroll-behavior: smooth;
+  width: 100%;
+ background-color: #252525;
+
+}
+.section2_Mneow{
+  background-color: #111;
+}
+
+.section3_Mneow::-webkit-scrollbar,
+.section2_Mneow::-webkit-scrollbar ,
+.sbacheal_Mneow::-webkit-scrollbar,.sbachea2_Mneow::-webkit-scrollbar {
+  height: 0;
+}
+
+/* Movie Card */
+/* ! sectoin1 */
+
+
+
+
+
+.section1{
+ 
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+.section1 h2{
+  color: white;
+  font-size: 25px;
+  font-weight: bolder;
+  margin: 10px 0px 2px 0px;
+  width: 90%;
+}
+
+.section1 .section1_p1{
+ 
+  width: 70%;
+  margin: 10px 0px;
+
+}
+
+.section1 a{
+  color: #477cee;
+  text-decoration: none;
+  transition: 0.2s;
+ padding: 5px;
+
+}
+
+.section1 a:hover{
+  color: rgb(0, 81, 255);
+ border-bottom:2px solid #477cee;
+}
+
+.section1_div1{
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.section1_div1 p{
+ text-align: center;
+ margin: auto;
+}
+
+
+.line{
+  height: 2px;
+  background-color: aliceblue;
+  width: 85%;
+}
+
+
+
+/* ! */
+.section_end{
+  text-align: center;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+gap: 10px;
+ background-color: #252525;
+ padding: 10px;
+ color: #6c6c6c;
+}
+
+.section_end p span{
+  color: white;
+}
+.section_end h3{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #af7070;
+margin-right: auto;
+
+}
+
+.section_end h3:hover{
+  color: blue;
+}
+/* !!!!!! */
+.movie-card {
+  width: 200px;
+  flex: 0 0 auto;
+  background: #1e1e1e;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  color: white;
+  transition: 0.3s;
+  border: 1px solid white;
+  position: relative;
+  
+}
+.movie-card img {
+  width: 100%;
+  height: 270px;
+  object-fit: cover;
+}
+.movie-card:hover {
+  border:2px solid greenyellow;
+  box-shadow: 0 4px 15px rgba(98, 255, 0, 0.4); /* ظل متدرج وناعم */
+}
+
+
+.sbacheal_Mneow .movie-card:hover {
+  
+
+  border:2px solid #ff029a;
+  box-shadow: 0px 4px 25px #ff00f7; /* ظل متدرج وناعم */
+}
+
+.sbachea2_Mneow .movie-card:hover {
+  
+
+  border:2px solid #ff0195;
+  box-shadow: 0px 4px 25px #ff00c8; /* ظل متدرج وناعم */
+}
+
+.movie-card .text {
+  position: absolute;
+  inset: 0;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0,0,0,0.5);
+  backdrop-filter: blur(2px);
+
+}
+
+.movie-cardend ,.movie-card2 .text2,.movie-card3 .text2{
+  display: flex;
+  padding: 10px;
+  justify-content: space-between;
+}
+.movie-card2 .text2 p,.movie-card3 .text2 p{
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.movie-card:hover .text {
+  display: flex;
+     gap: 20px;
+}
+.movie-card .text button {
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 10px;
+  margin-top: 8px;
+  cursor: pointer;
+  font-weight: bold;
+    width: 50%;
+  background: rgb(2, 91, 2);
+
+}
+.movie-card .text button:hover {
+  background: rgba(0, 255, 0, 0.824);
+
+
+}
+
+.movie-card2,.movie-card3{
+  /* background-color: #ccc; */
+  gap: 10px;
+  width: 250px;
+  height: 220px;
+  border-radius: 10px ;
+
+}
+.movie-card2 img,.movie-card3 img{
+  cursor: pointer;
+
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+}
+
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+body{
+  position: relative;
+}
+.searchIcin{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  z-index: 9999;
+
+position: fixed;
+top:   140px;
+
+right: 0;
+}
+
+.searchIcin a i{
+  margin-top: 2px;
+  border-radius: 5px;
+  margin-right: 4px;
+  padding:7px 5px;
+cursor: pointer;
+  color: white;
+  width: 100%;height: 100%;
+
+}
+
+
+/* !!!!!!!!!! */
+
+
+
+
+.section2_MneowMotagat{
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+
+}
+
+
+
+
+/* !!!!!!!!! */
+
+@media (max-width: 900px) {
+  .navbar ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background: #111;
+    padding: 15px;
+  }
+  .navbar.active ul {
+    display: flex;
+  }
+  .menu-icon {
+    display: block;
+  }
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .navbar input {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+
+
+
+
+/* Responsive Cards */
+@media (max-width: 700px) {
+  .movie-card {
+    width: 150px;
+  }
+  .movie-card img {
+    height: 200px;
+  }
+}
+
